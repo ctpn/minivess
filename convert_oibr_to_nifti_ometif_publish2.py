@@ -230,19 +230,18 @@ def main():
         convert_a_dir_of_oir_and_oib(data_dir, export_as_nifti, export_as_ometif)
     else:
         parser = argparse.ArgumentParser(description='Image conversion from Olympus (.oib, .oir) to NifTI (.nii.gz) and/or OME-TIFF (.ometif).')
-        parser.add_argument('-data_dir', '--data_dir', type=str, default='../DATASET/raw_files_oib/',
+        parser.add_argument('data_dir', type=str, default='../DATASET/raw_files_oib/',
                         help='directory containing your .oib files')
         
-        #parser.add_argument('-export_as_nifti', '--export_as_nifti', action='store_true',
-        parser.add_argument('export_as_nifti', action='store_true',
+        parser.add_argument('export_as_nifti', default=True, action='store_true',
                         help='Export as NifTI format, commonly used for radiological imaging and in DL frameworks like MONAI')
 
-        #parser.add_argument('-export_as_ometif', '--export_as_ometif', action='store_true',
-        parser.add_argument('export_as_ometif', action='store_true',
+        parser.add_argument('export_as_ometif', default=True, action='store_true',
                         help='Export as OME-TIFF format, commonly used for microscopy images.')
 
         args = parser.parse_args()
 
+        data_dir = args.data_dir
         export_as_nifti = args.export_as_nifti
         export_as_ometif = args.export_as_ometif
 
