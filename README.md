@@ -1,8 +1,8 @@
 # minivess
 
-Data repository for MiniVess: A dataset of rodent cerebrovasculature from \textit{in vivo} multiphoton fluorescence microscopy imaging.
+Data repository for MiniVess: A dataset of rodent cerebrovasculature from in vivo multiphoton fluorescence microscopy imaging.
 
-Description of files:
+<h4>Description of files:</h4>
 1. convert_oibr_to_nifti_ometif_publish2.py
 Converts 3D or 4D Olympus (.oir, .oib) files to 3D NifTi volumes, with metadata encoded in NifTi-1 header format.
 
@@ -21,7 +21,7 @@ Requires corresponding raw 3D NifTi volumes to ensure that the segmented 3D NifT
 2D UNet using MONAI framework, heavily based on their spleen segmentation tutorial.
 
 
-Sample command line runs:
+<h4>Sample command line runs:</h4>
 
 1. convert_oibr_to_nifti_ometif_publish2.py
 python convert_oibr_to_nifti_ometif_publish2.py --data_dir '/path_to_directory_of_oib_and_oir_files/'
@@ -29,7 +29,7 @@ python convert_oibr_to_nifti_ometif_publish2.py --data_dir '/path_to_directory_o
 2. convert_3d_to_2d_mycode.py
 python convert_3d_to_2d_mycode.py '/path_to_root_directory/' '/path_to_directory_of_raw_3d_nifti_volumes/' '/path_to_directory_of_raw_3d_nifti_volumes/'
 
-outputs are saved in directories in '/path_to_root_directory/' 
+   outputs are saved in directories in '/path_to_root_directory/' 
 
 3. convert_2dpng_to_3dniftiometif.py
 python convert_2dpng_to_3dniftiometif.py '/path_to_root_directory/' '/path_to_directory_of_segmented_2d_png_images/' '/path_to_directory_of_raw_3d_nifti_volumes/'
