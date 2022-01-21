@@ -32,3 +32,5 @@ python convert_3d_to_2d_mycode.py '/path_to_root_directory/' '/path_to_directory
 outputs are saved in directories in '/path_to_root_directory/' 
 
 3. convert_2dpng_to_3dniftiometif.py
+python convert_2dpng_to_3dniftiometif.py '/path_to_root_directory/' '/path_to_directory_of_segmented_2d_png_images/' '/path_to_directory_of_raw_3d_nifti_volumes/'
+
