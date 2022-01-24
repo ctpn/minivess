@@ -24,14 +24,14 @@ Requires corresponding raw 3D NifTi volumes to ensure that the segmented 3D NifT
 
 <h3>Sample command line runs:</h3>
 
-1. convert_oibr_to_nifti_ometif_publish2.py
+1. convert_oibr_to_nifti_ometif_publish2.py</br>
 python convert_oibr_to_nifti_ometif_publish2.py --data_dir '/path_to_directory_of_oib_and_oir_files/'
 
-2. convert_3d_to_2d_mycode.py
+2. convert_3d_to_2d_mycode.py</br>
 python convert_3d_to_2d_mycode.py '/path_to_root_directory/' '/path_to_directory_of_raw_3d_nifti_volumes/' '/path_to_directory_of_raw_3d_nifti_volumes/'
 
    outputs are saved in directories in '/path_to_root_directory/' 
 
-3. convert_2dpng_to_3dniftiometif.py
+3. convert_2dpng_to_3dniftiometif.py</br>
 python convert_2dpng_to_3dniftiometif.py '/path_to_root_directory/' '/path_to_directory_of_segmented_2d_png_images/' '/path_to_directory_of_raw_3d_nifti_volumes/'
 
