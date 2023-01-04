@@ -24,6 +24,9 @@ Requires corresponding raw 3D NifTi volumes to ensure that the segmented 3D NifT
 2D UNet using MONAI framework, heavily based on their spleen segmentation tutorial.
 Input: use raw 2D png images, or output from convert_3d_to_2d_mycode.py
 
+5. image_preprocessing_example.py </br>
+Example code of image preprocessing steps described in the manuscript.
+
 <h3>Sample command line runs:</h3>
 
 1. convert_oibr_to_nifti_ometif_publish2.py</br>
