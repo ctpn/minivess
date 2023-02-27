@@ -1,6 +1,11 @@
-# minivess
+# MiniVess: A dataset of rodent cerebrovasculature from in vivo multiphoton fluorescence microscopy imaging.
 
-Data repository for MiniVess: A dataset of rodent cerebrovasculature from in vivo multiphoton fluorescence microscopy imaging.
+We provide the code for image preprocessing, conversion, and segmentation of the paper [A dataset of rodent cerebrovasculature from in vivo multiphoton fluorescence microscopy imaging](https://www.biorxiv.org/content/10.1101/2022.07.19.500542v1.abstract) by Charissa Poon, Petteri Teikari, Muhammad Febrian Rachmadi, Henrik Skibbe, and Kullervo Hynynen.
+
+The data is stored in an EBRAINS repository and will be linked upon manuscript acceptance.
+
+## Abstract
+We present MiniVess, the first annotated dataset of rodent cerebrovasculature, acquired using two-photon fluorescence microscopy. MiniVess consists of 70 3D image volumes with segmented ground truths. Segmentations were created using traditional image processing operations, a U-Net, and manual proofreading. Code for image preprocessing steps and the U-Net are provided. Supervised machine learning methods have been widely used for automated image processing of biomedical images. While much emphasis has been placed on the development of new network architectures and loss functions, there has been an increased emphasis on the need for publicly available annotated, or segmented, datasets. Annotated datasets are necessary during model training and validation. In particular, datasets that are collected from different labs are necessary to test the generalizability of models.  We hope this dataset will be helpful in testing the reliability of machine learning tools for analyzing biomedical images.
 
 <h3>Description of files:</h3>
 
